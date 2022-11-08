@@ -7,6 +7,41 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <form id="imc-form">
+        <label for="peso">Peso:</label>
+        <input type="number" id="peso"><br><br>
+        <label for="altura">Altura:</label>
+        <input step="0.01" type="number" id="altura"><br><br>
+        <input type="submit" value="Calcular">
+      </form> 
 </body>
 </html>
+<script>
+document.querySelector("#imc-form").addEventListener("submit", function(e){
+e.preventDefault()
+var peso = document.getElementById("peso").value
+
+var altura = document.getElementById("altura").value
+
+var imc = peso/(altura * altura)
+//imc=imc.toFixed(1)
+
+if(imc<18.5){
+    alert("Desnutrição")
+}
+else if(imc>18.5 && imc<24.9){
+    alert("Normalidade")
+}
+else if(imc>25 && imc<29.9){
+    alert("Sobrepeso")
+}
+else if(imc>30 && imc<39.9){
+    alert("Obesidade")
+}
+else if(imc>=40){
+    alert("Obesidade mórbida")
+}
+
+
+});
+</script>
