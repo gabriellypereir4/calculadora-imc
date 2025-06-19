@@ -6,6 +6,10 @@ A **Calculadora de IMC** é uma aplicação simples e prática desenvolvida para
 
 👉 [Clique aqui para visualizar](https://calculadora-imc-lilac.vercel.app/)
 
+## 🖼️ Prévia
+
+![Preview da calculadora imc](https://github.com/user-attachments/assets/e6085d3d-bfc7-4259-8e4a-c236f234e249)
+
 ## ⚙️ Tecnologias utilizadas
 
 - **HTML5**  
